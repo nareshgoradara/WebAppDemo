@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JxSn11DlgXwbphqIdYyCZivIf0ueXsBtuHaf8kHZh7/bMMET1a7u9AvMjRZgEIto1OBtJnR4F+359ECobls6hA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Azure\\WebAppDemo\\WebAppDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Naresh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
