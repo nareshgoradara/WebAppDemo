@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'ftwebapp22'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6B9644CE3B74268A53CF206A2FD7A58 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B2E67B2F3E4B4521A6A182FFC9CD9BA2 }}
           package: .
