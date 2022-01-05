@@ -70,3 +70,4 @@ D:\Projects\Azure\WebAppDemo\obj\Debug\netcoreapp3.1\WebAppDemo.dll
 D:\Projects\Azure\WebAppDemo\obj\Debug\netcoreapp3.1\WebAppDemo.pdb
 D:\Projects\Azure\WebAppDemo\obj\Debug\netcoreapp3.1\WebAppDemo.genruntimeconfig.cache
 D:\Projects\Azure\WebAppDemo\obj\Debug\netcoreapp3.1\WebAppDemo.csproj.CopyComplete
+D:\Projects\Azure\WebAppDemo\bin\Debug\netcoreapp3.1\web.config
