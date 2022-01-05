@@ -34,7 +34,7 @@ namespace WebAppDemo.Pages
                     .SetSlidingExpiration(TimeSpan.FromSeconds(120));
 
                 _memoryCache.Set(CACHE_KEY, cacheValue, cacheEntryOptions);
-                Thread.Sleep(TimeSpan.FromSeconds(10));
+                Thread.Sleep(TimeSpan.FromSeconds(1));
             }
 
             CurrentDateTime = cacheValue;
