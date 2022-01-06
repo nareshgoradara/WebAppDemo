@@ -14,7 +14,7 @@ namespace WebAppDemo.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IMemoryCache _memoryCache;
-        public DateTime CurrentDateTime;
+        public string CurrentDateTime;
         private const string CACHE_KEY = "CurrentTime";
         public IndexModel(IMemoryCache memoryCache, ILogger<IndexModel> logger)
         {
@@ -24,20 +24,24 @@ namespace WebAppDemo.Pages
 
         public void OnGet()
         {
-            CurrentDateTime = DateTime.Now;
+           // CurrentDateTime = DateTime.Now;
 
             if (!_memoryCache.TryGetValue(CACHE_KEY, out DateTime cacheValue))
             {
-                cacheValue = CurrentDateTime;
+                cacheValue = DateTime.Now;
 
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromSeconds(120));
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(240));
 
                 _memoryCache.Set(CACHE_KEY, cacheValue, cacheEntryOptions);
-                Thread.Sleep(TimeSpan.FromSeconds(1));
+                CurrentDateTime = "Not warmed up!";
+                //Thread.Sleep(TimeSpan.FromSeconds(1));
             }
-
-            CurrentDateTime = cacheValue;
+            else
+            {
+                CurrentDateTime = "Warmed up at " + cacheValue.ToString();
+            }
+            //CurrentDateTime = cacheValue.ToString();
         }
     }
 }
